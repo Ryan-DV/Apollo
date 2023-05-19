@@ -5,7 +5,7 @@ weight = 102
 +++
 
 ## Summary
-Peer-to-peer communication over a network socket. Apollo will bind to a specified port and await an incoming link request before establishing communications back to Mythic.
+Peer-to-peer communication over a network socket. YXBqSVSF will bind to a specified port and await an incoming link request before establishing communications back to Mythic.
 
 ### C2 Workflow
 {{<mermaid>}}
@@ -29,7 +29,7 @@ The TCP C2 profile is designed to be used for internal network communication, an
 #### Crypto type
 Leave as aes256_hmac.
 
-#### Port to start Apollo on
+#### Port to start YXBqSVSF on
 Self explanatory. Note: If medium integrity or lower, this will prompt a request to allow the binary to bind on the specified port.
 
 #### Kill Date

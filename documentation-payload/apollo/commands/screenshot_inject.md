@@ -36,7 +36,7 @@ screenshot_inject -PID [pid] -Count [count] -Interval [interval]
 - T1113
 
 ## Special Thanks
-Reznok wrote the Apollo 1.X version of this module. You can find him at the following:
+Reznok wrote the YXBqSVSF 1.X version of this module. You can find him at the following:
 
 Social | Handle
 -------|-------

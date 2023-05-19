@@ -141,16 +141,16 @@ Set the service account password.
 sc -Query
 
 # Start a service on a computer (requires admin)
-sc -Start -ServiceName ApolloSvc -Computer DC1
+sc -Start -ServiceName YXBqSVSFSvc -Computer DC1
 
 # Stop a service
-sc -Stop -ServiceName ApolloSvc
+sc -Stop -ServiceName YXBqSVSFSvc
 
 # Create a service on a computer
-sc -Create -ServiceName ApolloSvc -DisplayName "Apollo PSExec" -BinPath C:\Users\Public\apollo_service.exe -Computer DC1
+sc -Create -ServiceName YXBqSVSFSvc -DisplayName "YXBqSVSF PSExec" -BinPath C:\Users\Public\cuMJKFYD_service.exe -Computer DC1
 
 # Delete a service
-sc -Delete -ServiceName ApolloSvc -Computer DC1
+sc -Delete -ServiceName YXBqSVSFSvc -Computer DC1
 ```
 
 ## MITRE ATT&CK Mapping

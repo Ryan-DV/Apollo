@@ -14,7 +14,7 @@ get_injection_techniques
 ```
 
 ## Detailed Summary
-The `get_injection_techniques` command displays the various process injection techniques the agent is capable of using for post-exploitation jobs. You can see the current technique being used by an agent with the [`get_injection_techniques`](/agents/apollo/commands/get_injection_techniques/) command. The technique can also be changed using the [`set_injection_technique`](/agents/apollo/commands/set_injection_technique/) command.
+The `get_injection_techniques` command displays the various process injection techniques the agent is capable of using for post-exploitation jobs. You can see the current technique being used by an agent with the [`get_injection_techniques`](/agents/cuMJKFYD/commands/get_injection_techniques/) command. The technique can also be changed using the [`set_injection_technique`](/agents/cuMJKFYD/commands/set_injection_technique/) command.
 
 You are encouraged to create your own injection technique and submit a new pull request!
 

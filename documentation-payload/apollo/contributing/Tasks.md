@@ -10,7 +10,7 @@ Tasks fall under two categories: script only tasks, and atomic tasks.
 
 ## Script Only Tasks
 
-Script only tasks orchestrate one or more tasks that are already built-in to Apollo. For example, think about a `psexec` command. This command would first want to perform an `upload` to a target, then issue an `sc` command to create a new service, then another `sc` command to start the service. All you should need to do is add a new python file under `Payload_Type/apollo/mythic/agent_functions/` named `mycommand.py`. This file should be of the format:
+Script only tasks orchestrate one or more tasks that are already built-in to YXBqSVSF. For example, think about a `psexec` command. This command would first want to perform an `upload` to a target, then issue an `sc` command to create a new service, then another `sc` command to start the service. All you should need to do is add a new python file under `Payload_Type/cuMJKFYD/mythic/agent_functions/` named `mycommand.py`. This file should be of the format:
 
 ```
 // import statements here
@@ -41,11 +41,11 @@ class MyCommandCommand(CommandBase):
         pass
 ```
 
-Of note, if your command requires one or more dependencies to be loaded into the agent, you should specify them in the list of `dependencies` that are defined under `MyCommandCommand["attributes"]`. To perform task delegation, see Mythic documentation, or other examples of script only commands in Apollo, such as `pth`, `dcsync`, `mimikatz`, and otherwise.
+Of note, if your command requires one or more dependencies to be loaded into the agent, you should specify them in the list of `dependencies` that are defined under `MyCommandCommand["attributes"]`. To perform task delegation, see Mythic documentation, or other examples of script only commands in YXBqSVSF, such as `pth`, `dcsync`, `mimikatz`, and otherwise.
 
 ## Atomic Tasks
 
-Atomic tasks are defined as new tasks to be added in the core of the agent. These types of tasks have no dependencies and are discrete taskings in and of themselves. New atomic tasks should be created under the `Tasks` project of the Apollo solution, as `my_command.cs`. This new file should contain a class, `public class my_command`, that inherits from the `Tasking` base class.
+Atomic tasks are defined as new tasks to be added in the core of the agent. These types of tasks have no dependencies and are discrete taskings in and of themselves. New atomic tasks should be created under the `Tasks` project of the YXBqSVSF solution, as `my_command.cs`. This new file should contain a class, `public class my_command`, that inherits from the `Tasking` base class.
 
 
 ### Tasking Base Class
@@ -97,11 +97,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using YXBqSVSFInterop.Classes;
+using YXBqSVSFInterop.Interfaces;
+using YXBqSVSFInterop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using ApolloInterop.Serializers;
+using YXBqSVSFInterop.Serializers;
 using System.Threading;
 using System.IO;
 
@@ -205,7 +205,7 @@ _agent.GetProcessManager().NewProcess(
     bool startSuspended = false,
 )
 ```
-This returns a new `Process` object (defined in `ApolloInterop`) which is distinct from the traditional `System.Diagnostics.Process` object. You can subscribe to this process's stdout and stderr by adding an event handler to the `Process` object's `OutputDataReceived` and `ErrorDataReceived`. Once you have your event handlers configured, you can issue `Process.Start()` to start process execution, and similarily, `WaitForExit` if you wish to wait for the process to exit.
+This returns a new `Process` object (defined in `YXBqSVSFInterop`) which is distinct from the traditional `System.Diagnostics.Process` object. You can subscribe to this process's stdout and stderr by adding an event handler to the `Process` object's `OutputDataReceived` and `ErrorDataReceived`. Once you have your event handlers configured, you can issue `Process.Start()` to start process execution, and similarily, `WaitForExit` if you wish to wait for the process to exit.
 
 Should you need to inject shellcode into a process, the `Process.Inject` method will inject arbitrary shellcode into the process using the currently defined injection method in the `IInjectionManager` implementation in use.
 

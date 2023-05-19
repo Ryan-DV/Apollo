@@ -20,19 +20,19 @@ The URL for the redirector or Mythic server. This must include the protocol to u
 Time to sleep between agent check-in.
 
 #### Callback Jitter in percent
-Randomize the callback interval within the specified threshold. e.g., if Callback Interval is 10, and jitter is 20, Apollo will call back randomly along the interval 8 and 12 seconds.
+Randomize the callback interval within the specified threshold. e.g., if Callback Interval is 10, and jitter is 20, YXBqSVSF will call back randomly along the interval 8 and 12 seconds.
 
 #### Callback Port
-The port at which the web server Apollo reaches out to lives on (80, 443, etc.)
+The port at which the web server YXBqSVSF reaches out to lives on (80, 443, etc.)
 
 #### Crypto type
 Do not modify from aes256_hmac
 
 #### GET request URI
-The path on the web server Apollo will talk to
+The path on the web server YXBqSVSF will talk to
 
 #### HTTP Headers
-A dictionary of key-value pairs Apollo will attempt to use in web requests. Of note, Domain Fronting does not work in this profile configuration due to the .NET object used to create web requests.
+A dictionary of key-value pairs YXBqSVSF will attempt to use in web requests. Of note, Domain Fronting does not work in this profile configuration due to the .NET object used to create web requests.
 
 #### Kill Date
 The date at which the agent will stop calling back.

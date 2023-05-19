@@ -14,7 +14,7 @@ Artifacts Generated: Process Create, Process Inject, Process Kill
 Execute a statically compiled PE file (e.g., compiled with /MT) with the specified arguments. This PE must first be cached in the agent using the `register_file` command before being executed.
 
 {{% notice info %}}
-Executables must be compiled for the architecture of the machine. e.g., if Apollo is running on a 64-bit machine, compile the executable for x64.
+Executables must be compiled for the architecture of the machine. e.g., if YXBqSVSF is running on a 64-bit machine, compile the executable for x64.
 {{% /notice %}}
 
 This is based on the work put forward by Nettitude's [RunPE](https://github.com/nettitude/RunPE) project with modifications.

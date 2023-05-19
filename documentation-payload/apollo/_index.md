@@ -1,14 +1,14 @@
 +++
-title = "Apollo"
+title = "YXBqSVSF"
 chapter = true
 weight = 100
 +++
 
-![logo](/agents/apollo/ApolloLandscape.svg?width=600px)
+![logo](/agents/cuMJKFYD/YXBqSVSFLandscape.svg?width=600px)
 
 ## Summary
 
-Apollo is a Windows-platform integration into the Mythic command-and-control framework. Apollo is open source, written in C#, and designed with training in mind to help students who take SpecterOps course offerings better understand how different attack techniques are implemented at a technical level.
+YXBqSVSF is a Windows-platform integration into the Mythic command-and-control framework. YXBqSVSF is open source, written in C#, and designed with training in mind to help students who take SpecterOps course offerings better understand how different attack techniques are implemented at a technical level.
 
 ### Highlighted Agent Features
 

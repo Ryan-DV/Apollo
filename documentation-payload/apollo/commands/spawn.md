@@ -10,7 +10,7 @@ Artifacts Generated: Process Create, Process Inject
 {{% /notice %}}
 
 ## Summary
-Spawn a new Apollo agent based off the payload template given. (Note: Must be `Shellcode` format.)
+Spawn a new YXBqSVSF agent based off the payload template given. (Note: Must be `Shellcode` format.)
 
 ### Arguments (Popup)
 #### Payload Template

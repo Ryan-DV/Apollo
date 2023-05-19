@@ -6,11 +6,11 @@ weight = 25
 
 ## Creating a New API Resolver
 
-New API resolvers must be a new .NET 4.0 Class library project under the Apollo solution. This new project should have a new class that follows the naming schema of `XxxxResolver` and inherits from the `IWin32ApiResolver` interface.
+New API resolvers must be a new .NET 4.0 Class library project under the YXBqSVSF solution. This new project should have a new class that follows the naming schema of `XxxxResolver` and inherits from the `IWin32ApiResolver` interface.
 
 ### IWin32ApiResolver
 
-The `IWin32ApiResolver` must implement three functions (though only one of which is currently leveraged in the Apollo code base).
+The `IWin32ApiResolver` must implement three functions (though only one of which is currently leveraged in the YXBqSVSF code base).
 
 ```
 // The most important function to implement - used universally across the code base

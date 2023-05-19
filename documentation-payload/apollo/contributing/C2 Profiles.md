@@ -6,13 +6,13 @@ weight = 25
 
 ## Creating a New Profile
 
-New command-and-control profiles for Apollo should be new projects under the Apollo solution. Your new project should be named `C2ChannelProfile`, where `C2Channel` is the means through which the profile will talk to Mythic. For example, if this profile communicates over HTTP, the project name will be `HttpProfile`. If it would communicate over web sockets, the name should be `WebSocketProfile`. This project should be a .NET Framework 4.0 Class library.
+New command-and-control profiles for YXBqSVSF should be new projects under the YXBqSVSF solution. Your new project should be named `C2ChannelProfile`, where `C2Channel` is the means through which the profile will talk to Mythic. For example, if this profile communicates over HTTP, the project name will be `HttpProfile`. If it would communicate over web sockets, the name should be `WebSocketProfile`. This project should be a .NET Framework 4.0 Class library.
 
 In your new project, create a class that has the same name as your project (e.g., `public class C2ChannelProfile`). This class should inherit from the `C2Profile` abstract class and the `IC2Profile` interface. The constructor of your new C2 profile will take the following parameters:
 
 - Dictionary<string, string> parameters - C2 Profile specific parameters. For example, things like jitter, urls, host headers, etc. would all be passed via key-value pairs in this dictionary.
-- ISerializer serializer - This object is used to prepare C# structures into a serialized format that Mythic will receive, and allow the profile to deserialize JSON messages from Mythic into Apollo structures. Currently this variable should not be modified in the agent core.
-- IAgent agent - Core Apollo agent interface that grants the C2 profile access to other parts of the agent, such as the task manager.
+- ISerializer serializer - This object is used to prepare C# structures into a serialized format that Mythic will receive, and allow the profile to deserialize JSON messages from Mythic into YXBqSVSF structures. Currently this variable should not be modified in the agent core.
+- IAgent agent - Core YXBqSVSF agent interface that grants the C2 profile access to other parts of the agent, such as the task manager.
 
 The new C2 profile should implement the IC2Profile interface, which is as follows:
 
@@ -29,7 +29,7 @@ public interface IC2Profile
 
     // If the profile, on submission of data, will not receive Mythic's response as a reply,
     // this function should be used. Example: The data is submitted to a separate url than
-    // where Apollo will receive the response. Used if a one way profile.
+    // where YXBqSVSF will receive the response. Used if a one way profile.
     bool Send<IMythicMessage>(IMythicMessage message);
 
     // Send the data specified by Message to the server and pass the response of
@@ -48,11 +48,11 @@ public interface IC2Profile
 }
 ```
 
-## Adding Your Profile to Apollo Core
+## Adding Your Profile to YXBqSVSF Core
 
-Once you've created your new C2 profile, you'll need to add it to Apollo as a build option for C2 profiles.
+Once you've created your new C2 profile, you'll need to add it to YXBqSVSF as a build option for C2 profiles.
 
-In the Apollo project under the Apollo solution, add your new C2 profile as a project reference. Then, at the top of the `Apollo/Config.cs` file, add the following lines:
+In the YXBqSVSF project under the YXBqSVSF solution, add your new C2 profile as a project reference. Then, at the top of the `YXBqSVSF/Config.cs` file, add the following lines:
 
 ```
 using System;
@@ -90,4 +90,4 @@ To debug your C2 Profile, simply fill in the parameter values in the DEBUG block
 
 ### Add to Builder.py
 
-Lastly, you'll need to modify the builder.py file under `Payload_Type/apollo/mythic/agent_functions`. In that file, add your new profile to the `c2profiles` attribute under Apollo.
+Lastly, you'll need to modify the builder.py file under `Payload_Type/cuMJKFYD/mythic/agent_functions`. In that file, add your new profile to the `c2profiles` attribute under YXBqSVSF.

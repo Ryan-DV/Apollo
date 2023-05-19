@@ -20,7 +20,7 @@ Inject agent shellcode into a specified process.
 The target process's ID to inject the agent into.
 
 #### Payload Template
-The template to generate new shellcode from. Note: The template _must_ be shellcode for inject to succeed. This is the "Raw" output type when building Apollo.
+The template to generate new shellcode from. Note: The template _must_ be shellcode for inject to succeed. This is the "Raw" output type when building YXBqSVSF.
 
 ## Usage
 ```

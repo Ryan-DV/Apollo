@@ -5,7 +5,7 @@ weight = 102
 +++
 
 ## Summary
-Peer-to-peer communication over a named pipe. This enables C2 traffic to traverse over SMB within an internal network before egressing traffic through an HTTP Apollo agent to the Mythic server.
+Peer-to-peer communication over a named pipe. This enables C2 traffic to traverse over SMB within an internal network before egressing traffic through an HTTP YXBqSVSF agent to the Mythic server.
 
 Install via:
 ```
